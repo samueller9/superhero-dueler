@@ -1,10 +1,10 @@
 
-#Campus
-    #location
-    #name
-    #buildings
-    #open_spaces
-    #neighborhoods
+# Campus
+#     location
+#     name
+#     buildings
+#     open_spaces
+#     neighborhoods
 #Building
     #name
     #purpose
