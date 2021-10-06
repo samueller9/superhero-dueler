@@ -14,8 +14,8 @@ class Hero:
           starting_health: Integer
           current_health: Integer
         '''
-
-
+        self.deaths = 0
+        self.kills = 0
         self.abilities = list()
         self.armors = list()
         # we know the name of our hero, so we assign it here
@@ -31,20 +31,26 @@ class Hero:
         '''
         self.abilities.append(weapon)
 
-    # def fight(self, opponent):
-    #     ''' Current Hero will take turns fighting the opponent hero passed in.
-    #     '''
-    #
-    #     hero1 = hero("Wonder Woman")
-    #     hero2 = hero("Dumbledore")
-    #
-    #     hero1.fight(hero2)
 
     def add_ability(self, ability):
         ''' Add ability to abilities list '''
 
     # We use the append method to add ability objects to our list.
         self.abilities.append(ability)
+
+    def fight(self, opponent):
+        ''' Current Hero will take turns fighting the opponent hero passed in.
+        '''
+        if ability in self.abilities <= 0:
+            print ("Draw")
+        else:
+            hero1.fight(hero2)
+            while self.current_health <= 0:
+                print("You have defeated me")
+                self.add_kill(1) = num_kills
+                self.add_death(1) = num_deaths
+                print(hero.kills)
+                print(hero.deaths)
 
 
     def attack(self):
@@ -89,14 +95,14 @@ class Hero:
         else:
             return "True"
 
-    # def fight(self, opponent):
-    #     ''' Current Hero will take turns fighting the opponent hero passed in.
-    #     '''
-    #     if ability in self.abilities <= 0:
-    #         print ("Draw")
-    #     else:
-    #          hero1.fight(hero2)
-    #          while self.current_health <= 0:
+
+    def add_kill(self, num_kills):
+        ''' Update self.kills by num_kills amount'''
+        self.kills += num_kills
+
+    def add_death(self, num_deaths):
+        ''' Update deaths with num_deaths'''
+        self.deaths += num_deaths
 
 
 if __name__ == "__main__":
